@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="image1.png" type="image/x-icon">
+  <title>Sgpa Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body >
+  <header class="position bg-body-tertiary">
+    <nav class="navbar container mx-auto flex item-center justify-centre">
+      <div class="container-fluid flex item-center justify-centre">
+        <a class="navbar-brand " href="#">
+        <h1>SGPA Calculator</h1>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <div class="navbar container mx-auto space-y-6">
+    <div class="row mb-3 space-y-6">
+      <button type="button" class="btn btn-primary" style="margin-bottom: 2vw;"> 2021 Scheme 5th Sem SGPA Calculator</button>
+      <label for="colFormLabel" class="col-sm-2 col-form-label ">21CS51 (ATC)</label>
+      <div class="col-sm-10">
+        <input type="number" min="0" max="100" maxlength="2" class="form-control" id="marks1" placeholder="Marks">
+      </div>
+      <label for="colFormLabel" class="col-sm-2 col-form-label"> 21CSL582 (C#) </label>
+      <div class="col-sm-10">
+        <input type="number" min="0" max="100" maxlength="2" class="form-control" id="marks2" placeholder="Marks">
+      </div>
+      <label for="colFormLabel"  class="col-sm-2 col-form-label">21CS52  (CN)</label>
+      <div class="col-sm-10">
+        <input type="number" min="0" max="100" maxlength="2" class="form-control" id="marks3" placeholder="Marks">
+      </div>
+      <label for="colFormLabel" class="col-sm-2 col-form-label">21CS53 (DBMS)</label>
+      <div class="col-sm-10">
+        <input type="number" min="0" max="100" maxlength="2" class="form-control" id="marks4" placeholder="Marks">
+      </div>
+      <label for="colFormLabel" class="col-sm-2 col-form-label">21CS54 (AIML)</label>
+      <div class="col-sm-10">
+        <input type="number" min="0" max="100" maxlength="2" class="form-control" id="marks5" placeholder="Marks">
+      </div>
+      <label for="colFormLabel" class="col-sm-2 col-form-label">21CSL55 (DBMS LAB) </label>
+      <div class="col-sm-10">
+        <input type="number" min="0" max="100" maxlength="2" class="form-control" id="marks6" placeholder="Marks">
+      </div>
+      <label for="colFormLabel" class="col-sm-2 col-form-label">21RMI56 (RMIP) </label>
+      <div class="col-sm-10">
+        <input type="number" min="0" max="100" maxlength="2" class="form-control" id="marks7" placeholder="Marks">
+      </div>
+      <label for="colFormLabel" class="col-sm-2 col-form-label">21CIV57 (EVS)</label>
+      <div class="col-sm-10">
+        <input type="number" min="0" max="100" maxlength="2" class="form-control" id="marks8" placeholder="Marks">
+      </div>
+      <!--        
+      <label for="colFormLabel" class="col-sm-2 col-form-label">21UH49</label>
+      <div class="col-sm-10">
+        <input type="number" min="0" max="100" maxlength="2" class="form-control" id="marks9" placeholder="Marks">
+      </div>
+      <label for="colFormLabel" class="col-sm-2 col-form-label">21INT49</label>
+      <div class="col-sm-10">
+        <input type="number" min="0" max="100" maxlength="2" class="form-control" id="marks10" placeholder="Marks">
+      </div>  -->
+    </div>
+    <div class="flex item-center">
+
+    <div class="col-12  ">
+      <button class="btn btn-primary " type="submit" onclick="Sgpa()">Submit</button>
+    </div>
+    <div class="position " style="margin-top: 2vw; ">
+      <input type="text" class="btn btn-success" value="Result" id="result" disabled />
+    </div>
+
+    </div>
+  </div>
+</body>
+</html>
